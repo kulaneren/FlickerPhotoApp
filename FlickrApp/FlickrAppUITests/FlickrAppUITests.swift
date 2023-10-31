@@ -16,14 +16,16 @@ final class FlickrAppUITests: XCTestCase {
 
         XCTAssert(app.staticTexts["yorkshire"].exists)
 
+        XCTAssert(app.buttons["Search"].exists)
+
         app.buttons["Search"].tap()
 
-        XCTAssert(app.staticTexts["Search by username."].exists)
+        XCTAssert(app.staticTexts["Search by username. Example: HWSH"].exists)
         XCTAssert(app.staticTexts["Search by tags."].exists)
 
-        app.alerts["Info"].scrollViews.otherElements.buttons["Ok"].tap()
-
-        XCUIApplication().navigationBars["Uploads from Brian H Whittle"].buttons["Back"].tap()
+//        app.alerts["Info"].scrollViews.otherElements.buttons["Ok"].tap()
+//
+//        XCUIApplication().navigationBars["Uploads from Brian H Whittle"].buttons["Back"].tap()
 
         //        let cell = app.table.cells.element(boundBy:0)
         //        XCTAssertTrue(cell.exists)

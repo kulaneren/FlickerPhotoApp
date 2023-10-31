@@ -1,0 +1,33 @@
+{
+  "configurations" : [
+    {
+      "id" : "9AD96197-0319-478F-B731-5AB7002A064C",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "codeCoverage" : {
+      "targets" : [
+        {
+          "containerPath" : "container:Utility.xcodeproj",
+          "identifier" : "B098A3752AF119290064FAF0",
+          "name" : "Utility"
+        }
+      ]
+    }
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:Utility.xcodeproj",
+        "identifier" : "B098A37D2AF119290064FAF0",
+        "name" : "UtilityTests"
+      }
+    }
+  ],
+  "version" : 1
+}

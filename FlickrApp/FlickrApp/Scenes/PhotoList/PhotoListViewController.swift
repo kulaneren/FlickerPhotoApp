@@ -38,8 +38,6 @@ final class PhotoListViewController: UIViewController {
         tableView.register(UINib(nibName: "PhotoListTableViewCell", bundle: nil), forCellReuseIdentifier: PhotoListTableViewCell.cellIdentifier)
         tableView.separatorStyle = .none
         tableView.rowHeight = UITableView.automaticDimension
-
-        self.title = "test"
     }
 
     // MARK: Intents

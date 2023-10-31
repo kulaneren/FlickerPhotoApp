@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "B098A3512AF118E80064FAF0"
-               BuildableName = "FlickrAPI.framework"
-               BlueprintName = "FlickrAPI"
-               ReferencedContainer = "container:FlickrAPI.xcodeproj">
+               BlueprintIdentifier = "B098A3142AF118BC0064FAF0"
+               BuildableName = "FlickrApp.app"
+               BlueprintName = "FlickrApp"
+               ReferencedContainer = "container:FlickrApp.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -29,7 +29,7 @@
       shouldUseLaunchSchemeArgsEnv = "YES">
       <TestPlans>
          <TestPlanReference
-            reference = "container:FlickrAPITests/FlickrAPI.xctestplan"
+            reference = "container:FlickrAppTests/FlickrApp.xctestplan"
             default = "YES">
          </TestPlanReference>
       </TestPlans>
@@ -39,10 +39,21 @@
             parallelizable = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "B098A35B2AF118E90064FAF0"
-               BuildableName = "FlickrAPITests.xctest"
-               BlueprintName = "FlickrAPITests"
-               ReferencedContainer = "container:FlickrAPI.xcodeproj">
+               BlueprintIdentifier = "B098A32A2AF118BD0064FAF0"
+               BuildableName = "FlickrAppTests.xctest"
+               BlueprintName = "FlickrAppTests"
+               ReferencedContainer = "container:FlickrApp.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO"
+            parallelizable = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "B098A3342AF118BD0064FAF0"
+               BuildableName = "FlickrAppUITests.xctest"
+               BlueprintName = "FlickrAppUITests"
+               ReferencedContainer = "container:FlickrApp.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -57,6 +68,16 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "B098A3142AF118BC0064FAF0"
+            BuildableName = "FlickrApp.app"
+            BlueprintName = "FlickrApp"
+            ReferencedContainer = "container:FlickrApp.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"
@@ -64,15 +85,16 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <MacroExpansion>
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "B098A3512AF118E80064FAF0"
-            BuildableName = "FlickrAPI.framework"
-            BlueprintName = "FlickrAPI"
-            ReferencedContainer = "container:FlickrAPI.xcodeproj">
+            BlueprintIdentifier = "B098A3142AF118BC0064FAF0"
+            BuildableName = "FlickrApp.app"
+            BlueprintName = "FlickrApp"
+            ReferencedContainer = "container:FlickrApp.xcodeproj">
          </BuildableReference>
-      </MacroExpansion>
+      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

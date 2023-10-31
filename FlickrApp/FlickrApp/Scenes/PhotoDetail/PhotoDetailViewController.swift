@@ -10,8 +10,8 @@ import UIKit
 final class PhotoDetailViewController: UIViewController {
     
     @IBOutlet private weak var image: UIImageView!
-    @IBOutlet private weak var labelTitle: UILabel!
-    @IBOutlet private weak var labelTitleValue: UILabel!
+    @IBOutlet weak var labelTitle: UILabel!
+    @IBOutlet weak var labelTitleValue: UILabel!
     
     @IBOutlet private weak var labelTakeDate: UILabel!
     @IBOutlet private weak var labelTakeDateValue: UILabel!

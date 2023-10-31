@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "B098A3512AF118E80064FAF0"
-               BuildableName = "FlickrAPI.framework"
-               BlueprintName = "FlickrAPI"
-               ReferencedContainer = "container:FlickrAPI.xcodeproj">
+               BlueprintIdentifier = "B098A3752AF119290064FAF0"
+               BuildableName = "Utility.framework"
+               BlueprintName = "Utility"
+               ReferencedContainer = "container:Utility.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -29,7 +29,7 @@
       shouldUseLaunchSchemeArgsEnv = "YES">
       <TestPlans>
          <TestPlanReference
-            reference = "container:FlickrAPITests/FlickrAPI.xctestplan"
+            reference = "container:../Utility.xctestplan"
             default = "YES">
          </TestPlanReference>
       </TestPlans>
@@ -39,10 +39,10 @@
             parallelizable = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "B098A35B2AF118E90064FAF0"
-               BuildableName = "FlickrAPITests.xctest"
-               BlueprintName = "FlickrAPITests"
-               ReferencedContainer = "container:FlickrAPI.xcodeproj">
+               BlueprintIdentifier = "B098A37D2AF119290064FAF0"
+               BuildableName = "UtilityTests.xctest"
+               BlueprintName = "UtilityTests"
+               ReferencedContainer = "container:Utility.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -67,10 +67,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "B098A3512AF118E80064FAF0"
-            BuildableName = "FlickrAPI.framework"
-            BlueprintName = "FlickrAPI"
-            ReferencedContainer = "container:FlickrAPI.xcodeproj">
+            BlueprintIdentifier = "B098A3752AF119290064FAF0"
+            BuildableName = "Utility.framework"
+            BlueprintName = "Utility"
+            ReferencedContainer = "container:Utility.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>

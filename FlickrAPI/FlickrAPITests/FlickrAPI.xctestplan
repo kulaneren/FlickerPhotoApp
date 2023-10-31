@@ -1,0 +1,24 @@
+{
+  "configurations" : [
+    {
+      "id" : "C1187DC5-AADA-47AD-B3AE-23C93B79A391",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:FlickrAPI.xcodeproj",
+        "identifier" : "B098A35B2AF118E90064FAF0",
+        "name" : "FlickrAPITests"
+      }
+    }
+  ],
+  "version" : 1
+}

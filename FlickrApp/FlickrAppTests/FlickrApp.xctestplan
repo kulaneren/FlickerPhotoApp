@@ -1,0 +1,31 @@
+{
+  "configurations" : [
+    {
+      "id" : "B5E5B9D1-4A8F-4B06-AA6E-3C6E29441545",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:FlickrApp.xcodeproj",
+        "identifier" : "B098A32A2AF118BD0064FAF0",
+        "name" : "FlickrAppTests"
+      }
+    },
+    {
+      "target" : {
+        "containerPath" : "container:FlickrApp.xcodeproj",
+        "identifier" : "B098A3342AF118BD0064FAF0",
+        "name" : "FlickrAppUITests"
+      }
+    }
+  ],
+  "version" : 1
+}

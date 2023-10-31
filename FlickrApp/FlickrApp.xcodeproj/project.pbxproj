@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B01882872AF151300036AEC6 /* PhotoListViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B01882862AF151300036AEC6 /* PhotoListViewControllerTests.swift */; };
+		B018828B2AF152550036AEC6 /* URLProtocolMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = B018828A2AF152550036AEC6 /* URLProtocolMock.swift */; };
+		B05B53992AF1623B0043B864 /* PhotoDetailViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B05B53982AF1623B0043B864 /* PhotoDetailViewControllerTests.swift */; };
 		B098A3192AF118BC0064FAF0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B098A3182AF118BC0064FAF0 /* AppDelegate.swift */; };
 		B098A3222AF118BD0064FAF0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B098A3212AF118BD0064FAF0 /* Assets.xcassets */; };
 		B098A3252AF118BD0064FAF0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B098A3232AF118BD0064FAF0 /* LaunchScreen.storyboard */; };
@@ -78,6 +81,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		B01882862AF151300036AEC6 /* PhotoListViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoListViewControllerTests.swift; sourceTree = "<group>"; };
+		B018828A2AF152550036AEC6 /* URLProtocolMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLProtocolMock.swift; sourceTree = "<group>"; };
+		B0347CDF2AF16BF300BB01B5 /* FlickrAPI.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; name = FlickrAPI.xctestplan; path = ../FlickrAPI/FlickrAPITests/FlickrAPI.xctestplan; sourceTree = "<group>"; };
+		B0347CE02AF16C4500BB01B5 /* FlickrApp.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; name = FlickrApp.xctestplan; path = FlickrAppTests/FlickrApp.xctestplan; sourceTree = "<group>"; };
+		B05B53982AF1623B0043B864 /* PhotoDetailViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDetailViewControllerTests.swift; sourceTree = "<group>"; };
 		B098A3152AF118BC0064FAF0 /* FlickrApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlickrApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B098A3182AF118BC0064FAF0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B098A3212AF118BD0064FAF0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -145,9 +153,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B01882842AF1510A0036AEC6 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				B018828A2AF152550036AEC6 /* URLProtocolMock.swift */,
+				B01882852AF1511C0036AEC6 /* PhotoList */,
+				B05B53972AF1620D0043B864 /* PhotoDetail */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		B01882852AF1511C0036AEC6 /* PhotoList */ = {
+			isa = PBXGroup;
+			children = (
+				B01882862AF151300036AEC6 /* PhotoListViewControllerTests.swift */,
+			);
+			path = PhotoList;
+			sourceTree = "<group>";
+		};
+		B05B53972AF1620D0043B864 /* PhotoDetail */ = {
+			isa = PBXGroup;
+			children = (
+				B05B53982AF1623B0043B864 /* PhotoDetailViewControllerTests.swift */,
+			);
+			path = PhotoDetail;
+			sourceTree = "<group>";
+		};
 		B098A30C2AF118BC0064FAF0 = {
 			isa = PBXGroup;
 			children = (
+				B0347CDF2AF16BF300BB01B5 /* FlickrAPI.xctestplan */,
+				B0347CE02AF16C4500BB01B5 /* FlickrApp.xctestplan */,
 				B098A3172AF118BC0064FAF0 /* FlickrApp */,
 				B098A32E2AF118BD0064FAF0 /* FlickrAppTests */,
 				B098A3382AF118BD0064FAF0 /* FlickrAppUITests */,
@@ -182,6 +218,7 @@
 			isa = PBXGroup;
 			children = (
 				B098A3D52AF12EA00064FAF0 /* App */,
+				B01882842AF1510A0036AEC6 /* Scenes */,
 			);
 			path = FlickrAppTests;
 			sourceTree = "<group>";
@@ -476,8 +513,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B018828B2AF152550036AEC6 /* URLProtocolMock.swift in Sources */,
 				B098A3DB2AF12EB50064FAF0 /* AppDelegateTests.swift in Sources */,
+				B01882872AF151300036AEC6 /* PhotoListViewControllerTests.swift in Sources */,
 				B098A3DA2AF12EB50064FAF0 /* AppContainerTests.swift in Sources */,
+				B05B53992AF1623B0043B864 /* PhotoDetailViewControllerTests.swift in Sources */,
 				B098A3D92AF12EB50064FAF0 /* AppRouterTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
