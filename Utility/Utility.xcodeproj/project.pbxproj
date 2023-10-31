@@ -12,6 +12,7 @@
 		B098A39D2AF11ABB0064FAF0 /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B098A39C2AF11ABB0064FAF0 /* Date+Extensions.swift */; };
 		B098A3A02AF11ADD0064FAF0 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B098A39F2AF11ADD0064FAF0 /* String+Extensions.swift */; };
 		B098A3A22AF11B3D0064FAF0 /* Date+ExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B098A3A12AF11B3D0064FAF0 /* Date+ExtensionsTests.swift */; };
+		B098A3A42AF1222D0064FAF0 /* String+ExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B098A3A32AF1222D0064FAF0 /* String+ExtensionsTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +32,7 @@
 		B098A39C2AF11ABB0064FAF0 /* Date+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
 		B098A39F2AF11ADD0064FAF0 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
 		B098A3A12AF11B3D0064FAF0 /* Date+ExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+ExtensionsTests.swift"; sourceTree = "<group>"; };
+		B098A3A32AF1222D0064FAF0 /* String+ExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+ExtensionsTests.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 			isa = PBXGroup;
 			children = (
 				B098A3A12AF11B3D0064FAF0 /* Date+ExtensionsTests.swift */,
+				B098A3A32AF1222D0064FAF0 /* String+ExtensionsTests.swift */,
 			);
 			path = UtilityTests;
 			sourceTree = "<group>";
@@ -215,6 +218,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B098A3A42AF1222D0064FAF0 /* String+ExtensionsTests.swift in Sources */,
 				B098A3A22AF11B3D0064FAF0 /* Date+ExtensionsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

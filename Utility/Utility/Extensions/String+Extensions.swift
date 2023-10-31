@@ -8,9 +8,6 @@
 import Foundation
 
 extension String {
-    public func localize() -> String {
-        return NSLocalizedString(self, comment: "")
-    }
 
     public var removingHTMLOccurances: String {
         return self.replacingOccurrences(of: "<[^>]+>", with: "", options: .regularExpression, range: nil)
