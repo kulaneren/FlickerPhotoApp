@@ -8,6 +8,7 @@
 import Foundation
 
 public class FLPService {
+    public init() { }
     public static func testRun() {
         print("test run runs")
     }
