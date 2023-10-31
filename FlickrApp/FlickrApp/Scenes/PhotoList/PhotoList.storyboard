@@ -11,22 +11,43 @@
         <!--Photo List View Controller-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController storyboardIdentifier="PhotoListViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y6W-OH-hqX" customClass="PhotoListViewController" customModule="FlickrApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PhotoListViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y6W-OH-hqX" customClass="PhotoListViewController" customModule="FlickrPhotoList" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aA7-80-K9q">
-                                <rect key="frame" x="160" y="337" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="NTe-9H-psq">
+                                <rect key="frame" x="0.0" y="99" width="393" height="719"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ci7-rq-tx2">
+                                <rect key="frame" x="333" y="59" width="60" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Myw-lR-kxc"/>
+                                    <constraint firstAttribute="width" constant="60" id="UxR-EY-K8g"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="magnifyingglass" catalog="system"/>
+                                <connections>
+                                    <action selector="buttonSearchTapped:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="zUN-Vb-WGU"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Ci7-rq-tx2" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="5qn-et-0IB"/>
+                            <constraint firstItem="NTe-9H-psq" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="BO2-4c-lwD"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Ci7-rq-tx2" secondAttribute="trailing" id="eGa-Lb-hcg"/>
+                            <constraint firstItem="NTe-9H-psq" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="40" id="ilK-Wy-jGB"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="NTe-9H-psq" secondAttribute="trailing" id="u7m-Ol-zGL"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="NTe-9H-psq" secondAttribute="bottom" id="zAS-Qa-x5B"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="buttonSearch" destination="Ci7-rq-tx2" id="GxM-RW-a0f"/>
+                        <outlet property="tableView" destination="NTe-9H-psq" id="rEQ-z6-yPO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -34,6 +55,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="magnifyingglass" catalog="system" width="128" height="117"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

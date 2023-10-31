@@ -12,6 +12,9 @@
 		B098A3622AF118E90064FAF0 /* FlickrAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B098A3612AF118E90064FAF0 /* FlickrAPITests.swift */; };
 		B098A3632AF118E90064FAF0 /* FlickrAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = B098A3552AF118E80064FAF0 /* FlickrAPI.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B098A39A2AF119E10064FAF0 /* FLPService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B098A3992AF119E10064FAF0 /* FLPService.swift */; };
+		B098A3E62AF130610064FAF0 /* SearchPhotosResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B098A3E52AF130610064FAF0 /* SearchPhotosResponse.swift */; };
+		B098A3E82AF1306D0064FAF0 /* GetPhotosResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B098A3E72AF1306D0064FAF0 /* GetPhotosResponse.swift */; };
+		B098A3EB2AF130840064FAF0 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = B098A3EA2AF130840064FAF0 /* Item.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +34,9 @@
 		B098A35C2AF118E90064FAF0 /* FlickrAPITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlickrAPITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B098A3612AF118E90064FAF0 /* FlickrAPITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickrAPITests.swift; sourceTree = "<group>"; };
 		B098A3992AF119E10064FAF0 /* FLPService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FLPService.swift; sourceTree = "<group>"; };
+		B098A3E52AF130610064FAF0 /* SearchPhotosResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPhotosResponse.swift; sourceTree = "<group>"; };
+		B098A3E72AF1306D0064FAF0 /* GetPhotosResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetPhotosResponse.swift; sourceTree = "<group>"; };
+		B098A3EA2AF130840064FAF0 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,9 +79,11 @@
 		B098A3542AF118E80064FAF0 /* FlickrAPI */ = {
 			isa = PBXGroup;
 			children = (
+				B098A3E42AF130530064FAF0 /* Responses */,
+				B098A3E92AF130700064FAF0 /* DTOs */,
+				B098A3992AF119E10064FAF0 /* FLPService.swift */,
 				B098A3552AF118E80064FAF0 /* FlickrAPI.h */,
 				B098A3562AF118E80064FAF0 /* FlickrAPI.docc */,
-				B098A3992AF119E10064FAF0 /* FLPService.swift */,
 			);
 			path = FlickrAPI;
 			sourceTree = "<group>";
@@ -86,6 +94,23 @@
 				B098A3612AF118E90064FAF0 /* FlickrAPITests.swift */,
 			);
 			path = FlickrAPITests;
+			sourceTree = "<group>";
+		};
+		B098A3E42AF130530064FAF0 /* Responses */ = {
+			isa = PBXGroup;
+			children = (
+				B098A3E52AF130610064FAF0 /* SearchPhotosResponse.swift */,
+				B098A3E72AF1306D0064FAF0 /* GetPhotosResponse.swift */,
+			);
+			path = Responses;
+			sourceTree = "<group>";
+		};
+		B098A3E92AF130700064FAF0 /* DTOs */ = {
+			isa = PBXGroup;
+			children = (
+				B098A3EA2AF130840064FAF0 /* Item.swift */,
+			);
+			path = DTOs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -197,7 +222,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B098A3EB2AF130840064FAF0 /* Item.swift in Sources */,
+				B098A3E62AF130610064FAF0 /* SearchPhotosResponse.swift in Sources */,
 				B098A39A2AF119E10064FAF0 /* FLPService.swift in Sources */,
+				B098A3E82AF1306D0064FAF0 /* GetPhotosResponse.swift in Sources */,
 				B098A3572AF118E80064FAF0 /* FlickrAPI.docc in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

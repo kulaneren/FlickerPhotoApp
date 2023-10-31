@@ -6,3 +6,12 @@
 //
 
 import Foundation
+
+protocol PhotoDetailViewModelProtocol {
+    var delegate: PhotoDetailViewModelDelegate? { get set }
+    func load()
+}
+
+protocol PhotoDetailViewModelDelegate: AnyObject {
+    func showDetail(_ presentation: PhotoDetailPresentation)
+}

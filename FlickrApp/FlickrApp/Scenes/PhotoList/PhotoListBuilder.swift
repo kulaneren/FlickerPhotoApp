@@ -9,11 +9,13 @@ import UIKit
 import FlickrAPI
 
 final class PhotoListBuilder {
-
-    static func make() -> PhotoListViewController {
+    
+    static func make(apiService: FLPServiceProtocol? = nil) -> PhotoListViewController {
         let storyboard = UIStoryboard(name: "PhotoList", bundle: nil)
         let viewController = storyboard.instantiateViewController(withIdentifier: PhotoListViewController.storyboardIdentifier) as! PhotoListViewController
-
+        
+        viewController.viewModel = PhotoListViewModel(apiService: apiService ?? appContainer.apiService)
+        
         return viewController
     }
 }
